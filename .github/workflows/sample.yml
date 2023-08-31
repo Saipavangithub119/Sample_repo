@@ -13,6 +13,6 @@ jobs:
   run-windows-commands:
     runs-on: windows-latest
     steps:
-      -name: bash commands
-       run: pwd
-       shell: bash
+      - name: bash commands
+        run: pwd
+        shell: bash
