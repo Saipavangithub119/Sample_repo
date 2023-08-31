@@ -9,5 +9,5 @@ jobs:
         uses: actions/hello-world.javascript-action@v1
         with:
           who-to-greet: SPSOFTWARE
-      - name: Get the opuput time
+      - name: Get the output time
         run: echo "{{steps.hello.outputs.time}}"
