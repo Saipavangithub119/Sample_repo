@@ -2,7 +2,7 @@ name: Shell Commands
 on: [push]
 jobs:
   run-shell-commands:
-    run-on: ubuntu:latest
+    runs-on: ubuntu:latest
     steps:
       - name: string
         run: echo "Welcome to SP SOFTWARE SOLUTIONS"
