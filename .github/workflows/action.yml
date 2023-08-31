@@ -1,0 +1,13 @@
+name: Action Workflow
+on: [push]
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simple Java script action
+        id: hello
+        uses: actions/hello-world.javascript-action@v1
+        with:
+          who-to-greet: SPSOFTWARE
+      - name: Get the opuput time
+        run: echo "{{steps.hello.outputs.time}}"
